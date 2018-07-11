@@ -32,6 +32,8 @@ const binUtils = {
 };
 
 export {
+    adapterFun,
+    clone,
     binUtils,
     PouchDB,
     PouchDBErrors,
@@ -42,8 +44,6 @@ export {
     extendUsingYText,
     Y,
 
-    adapterFun,
-    clone,
     EventEmitter,
     SocketIO
 }
