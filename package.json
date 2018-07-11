@@ -1,6 +1,6 @@
 {
   "name": "cloudless-dependencies",
-  "version": "3.0.0",
+  "version": "3.0.1",
   "description": "Cloudless dependencies module for bundling and shipping",
   "main": "lib/cloudless-dependencies.esm.min.js",
   "module": "lib/cloudless-dependencies.esm.min.js",
@@ -30,7 +30,7 @@
     "rollup-plugin-node-resolve": "^3.3.0"
   },
   "scripts": {
-    "release": "gulp && sh release.sh && npm run licenses",
+    "release": "npm run licenses && gulp && sh release.sh",
     "licenses": "node scripts/licenses_and_attributions.js && generate-md --layout mixu-radar --input ./licenses_and_attributions/licenses_and_attributions.md --output ./licenses_and_attributions"
   },
   "repository": {
@@ -39,7 +39,8 @@
   },
   "authors": [
     "Michél Neumann | Spreewunder GmbH <michel.neumann@spreewunder.com>",
-    "Felix Waterstraat | Spreewunder GmbH <felix.waterstraat@spreewunder.com>"
+    "Felix Waterstraat | Spreewunder GmbH <felix.waterstraat@spreewunder.com>",
+    "Oliver J. | Spreewunder GmbH <oliver-j@spreewunder.com>"
   ],
   "license": "MIT",
   "bugs": {
