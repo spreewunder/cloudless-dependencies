@@ -1,26 +1,31 @@
-'use strict';
+"use strict";
 
 // Module dependencies
-const fs = require('fs');
-const del = require('del');
-const gulp = require('gulp');
-const path = require('path');
-const rollup = require('rollup');
-const rename = require('gulp-rename');
-const uglify = require('gulp-uglify-es').default;
-const rollupCommonJS = require('rollup-plugin-commonjs');
-const rollupNodeResolve = require('rollup-plugin-node-resolve');
-const rollupNodeGlobals = require('rollup-plugin-node-globals');
-const rollupNodeBuiltins = require('rollup-plugin-node-builtins');
+const fs = require("fs");
+const del = require("del");
+const gulp = require("gulp");
+const path = require("path");
+const git = require("gulp-git");
+const rollup = require("rollup");
+const rename = require("gulp-rename");
+const uglify = require("gulp-uglify-es").default;
+const rollupCommonJS = require("rollup-plugin-commonjs");
+const rollupNodeResolve = require("rollup-plugin-node-resolve");
+const rollupNodeGlobals = require("rollup-plugin-node-globals");
+const rollupNodeBuiltins = require("rollup-plugin-node-builtins");
+
+// Package version for release
+const PACKAGE_VERSION = require("./package.json").version;
+const COMMIT_MESSAGE = `Update cloudless-dependencies to v${PACKAGE_VERSION}`; 
 
 // Bundling input settings
-const INPUT_FILE = 'index.js';
+const INPUT_FILE = "index.js";
 
 // Bundling output settings
-const OUTPUT_PATH = 'lib';
-const OUTPUT_FORMAT = 'es';
-const OUTPUT_FILE = 'cloudless-dependencies.esm.js';
-const OUTPUT_MIN_FILE = 'cloudless-dependencies.esm.min.js';
+const OUTPUT_PATH = "lib";
+const OUTPUT_FORMAT = "es";
+const OUTPUT_FILE = "cloudless-dependencies.esm.js";
+const OUTPUT_MIN_FILE = "cloudless-dependencies.esm.min.js";
 
 // Settings for uglify mangling
 const UGLIFY_OPTIONS = {
@@ -29,7 +34,7 @@ const UGLIFY_OPTIONS = {
     ie8: false,
     toplevel: true,
     mangle: {
-        reserved:['YMap'],
+        reserved:["YMap"],
     },
     compress: {
         sequences: true,
@@ -52,38 +57,38 @@ const ROLLUP_NODE_RESOLVE_OPTIONS = {
     jsnext: true,
     main: true,
     browser: true,
-    extensions: ['.js'],
+    extensions: [".js"],
     preferBuiltins: true,
     modulesOnly: false,
-    jail: '/'
+    jail: "/"
 };
 
 // Settings for rollup plugin commonjs
 const ROLLUP_COMMON_JS_OPTIONS = {
-    include: 'node_modules/**',
+    include: "node_modules/**",
     exclude: [],
-    extensions: ['.js'],
+    extensions: [".js"],
     ignoreGlobal: false,
     sourceMap: false
 };
 
-gulp.task('clean', execFinished => {
+gulp.task("clean", execFinished => {
     // Check output directory
     if (!fs.existsSync(OUTPUT_PATH)) {
         // Create folder
         fs.mkdirSync(OUTPUT_PATH, (err) => {
-            if (err) console.error('Error while creating folder %s: %s', OUTPUT_PATH, err.message);
-            else console.log('Created %s directory.', OUTPUT_PATH);
+            if (err) console.error("Error while creating folder %s: %s", OUTPUT_PATH, err.message);
+            else console.log("Created %s directory.", OUTPUT_PATH);
         });
     } else {
         // Clear output path
-        del(path.join(OUTPUT_PATH, '**', '*'));
+        del(path.join(OUTPUT_PATH, "**", "*"));
     }
     // Tell gulp the task is done
     execFinished();
 });
 
-gulp.task('rollup', () => {
+gulp.task("rollup", () => {
     return rollup.rollup({
         input: `./${INPUT_FILE}`,
         plugins: [
@@ -96,17 +101,27 @@ gulp.task('rollup', () => {
         return bundle.write({
             file: `${OUTPUT_PATH}/${OUTPUT_FILE}`,
             format: OUTPUT_FORMAT,
-            exports: 'named',
+            exports: "named",
             sourcemap: false
         });
     });
 });
 
-gulp.task('uglify', () => {
+gulp.task("uglify", () => {
     return gulp.src(`${OUTPUT_PATH}/${OUTPUT_FILE}`)
         .pipe(uglify(UGLIFY_OPTIONS))
         .pipe(rename(OUTPUT_MIN_FILE))
         .pipe(gulp.dest(OUTPUT_PATH));
 });
 
-gulp.task('default', gulp.series('clean', 'rollup', 'uglify'));
+gulp.task("git", () => {
+    return gulp.src(['./lib/**', './index.*', './package*'])
+        .pipe(git.add())
+        .pipe(git.commit([COMMIT_MESSAGE]))
+        .pipe(git.tag(PACKAGE_VERSION, (err) => {
+            if(!err) git.push('origin', 'master', { args: " --tags" })
+            else console.error(err);
+        }))
+});
+
+gulp.task("default", gulp.series("clean", "rollup", "uglify", "git"));
