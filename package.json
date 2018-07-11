@@ -5,7 +5,6 @@
   "main": "lib/cloudless-dependencies.esm.min.js",
   "module": "lib/cloudless-dependencies.esm.min.js",
   "dependencies": {
-    "postinstall-build": "^5.0.1",
     "pouchdb-binary-utils": "^7.0.0",
     "pouchdb-browser": "^7.0.0",
     "pouchdb-errors": "^7.0.0",
