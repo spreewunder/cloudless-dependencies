@@ -14,9 +14,11 @@
   },
   "devDependencies": {
     "del": "^3.0.0",
+    "find": "^0.2.9",
     "gulp": "^4.0.0",
     "gulp-rename": "^1.3.0",
     "gulp-uglify-es": "^1.0.4",
+    "markdown-styles": "^3.1.10",
     "rollup": "^0.62.0",
     "rollup-plugin-commonjs": "^9.1.3",
     "rollup-plugin-node-builtins": "^2.1.2",
@@ -24,7 +26,8 @@
     "rollup-plugin-node-resolve": "^3.3.0"
   },
   "scripts": {
-    "release": "gulp && sh release.sh"
+    "release": "npm run licenses && gulp && sh release.sh",
+    "licenses": "node scripts/licenses_and_attributions.js && generate-md --layout mixu-radar --input ./licenses_and_attributions/licenses_and_attributions.md --output ./licenses_and_attributions"
   },
   "repository": {
     "type": "git",
@@ -32,7 +35,8 @@
   },
   "authors": [
     "Michél Neumann | Spreewunder GmbH <michel.neumann@spreewunder.com>",
-    "Felix Waterstraat | Spreewunder GmbH <felix.waterstraat@spreewunder.com>"
+    "Felix Waterstraat | Spreewunder GmbH <felix.waterstraat@spreewunder.com>",
+    "Oliver J. | Spreewunder GmbH <oliver-j@spreewunder.com>"
   ],
   "license": "MIT",
   "bugs": {
