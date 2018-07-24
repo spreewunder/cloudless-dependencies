@@ -13,10 +13,6 @@ import {
 
 // Y-JS dependencies
 import Y from 'yjs';
-import extendUsingYMemory from 'y-memory';
-import extendUsingYMap from 'y-map';
-import extendUsingYArray from 'y-array';
-import extendUsingYText from 'y-text';
 
 // Additional dependencies (ES5)
 import SocketIO from 'socket.io-client';
@@ -38,10 +34,6 @@ export {
     PouchDB,
     PouchDBErrors,
 
-    extendUsingYArray,
-    extendUsingYMap,
-    extendUsingYMemory,
-    extendUsingYText,
     Y,
 
     EventEmitter,
