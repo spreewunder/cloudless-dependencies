@@ -14,17 +14,15 @@
 |component-bind |1.0.0 | _See code repository or node modules folder for license information_ | _Unknown_ | git+https://github.com/component/bind.git|
 |component-emitter |1.2.1 | MIT | _Unknown_ | git+https://github.com/component/emitter.git|
 |component-inherit |0.0.3 | _See code repository or node modules folder for license information_ | _Unknown_ | git+https://github.com/component/inherit.git|
-|debug |2.6.9 | MIT | {"name":"TJ Holowaychuk","email":"tj@vision-media.ca"},{"name":"Nathan Rajlich","email":"nathan@tootallnate.net","url":"http://n8.io"},{"name":"Andrew Rhyne","email":"rhyneandrew@gmail.com"} | git://github.com/visionmedia/debug.git|
 |debug |3.1.0 | MIT | {"name":"TJ Holowaychuk","email":"tj@vision-media.ca"},{"name":"Nathan Rajlich","email":"nathan@tootallnate.net","url":"http://n8.io"},{"name":"Andrew Rhyne","email":"rhyneandrew@gmail.com"} | git://github.com/visionmedia/debug.git|
 |engine.io-client |3.2.1 | MIT | {"name":"Guillermo Rauch","email":"rauchg@gmail.com"},{"name":"Vladimir Dronnikov","email":"dronnikov@gmail.com"},{"name":"Christoph Dorn","url":"https://github.com/cadorn"},{"name":"Mark Mokryn","email":"mokesmokes@gmail.com"} | git+https://github.com/socketio/engine.io-client.git|
 |engine.io-parser |2.1.2 | MIT | _Unknown_ | git+ssh://git@github.com/socketio/engine.io-parser.git|
-|fast-diff |1.1.2 | Apache-2.0 | {"name":"Jason Chen","email":"jhchen7@gmail.com"} | git+https://github.com/jhchen/fast-diff.git|
+|inherits |2.0.3 | ISC | _Unknown_ | git://github.com/isaacs/inherits.git|
+|ms |2.0.0 | MIT | _Unknown_ | git+https://github.com/zeit/ms.git|
 |isarray |2.0.1 | MIT | {"name":"Julian Gruber","email":"mail@juliangruber.com","url":"http://juliangruber.com"} | git://github.com/juliangruber/isarray.git|
 |has-binary2 |1.0.3 | MIT | {"name":"Kevin Roark"} | -|
 |has-cors |1.1.0 | MIT | {"name":"Nathan Rajlich","email":"nathan@tootallnate.net","url":"http://n8.io/"} | git://github.com/component/has-cors.git|
 |indexof |0.0.1 | _See code repository or node modules folder for license information_ | _Unknown_ | -|
-|inherits |2.0.3 | ISC | _Unknown_ | git://github.com/isaacs/inherits.git|
-|ms |2.0.0 | MIT | _Unknown_ | git+https://github.com/zeit/ms.git|
 |object-component |0.0.3 | _See code repository or node modules folder for license information_ | _Unknown_ | -|
 |parseqs |0.0.5 | MIT | {"name":"Gal Koren"} | git+https://github.com/get/querystring.git|
 |parseuri |0.0.5 | MIT | _Unknown_ | git+https://github.com/get/parseuri.git|
@@ -45,11 +43,7 @@
 |vuvuzela |1.0.3 | Apache-2.0 | {"name":"Nolan Lawson","email":"nolan.lawson@gmail.com"} | git+https://github.com/nolanlawson/vuvuzela.git|
 |ws |3.3.3 | MIT | {"name":"Einar Otto Stangvik","email":"einaros@gmail.com","url":"http://2x.io"} | git+https://github.com/websockets/ws.git|
 |xmlhttprequest-ssl |1.5.5 | [{"type":"MIT","url":"http://creativecommons.org/licenses/MIT/"}] | {"name":"Michael de Wit"} | git://github.com/mjwwit/node-XMLHttpRequest.git|
-|y-array |10.1.4 | MIT | {"name":"Kevin Jahns","email":"kevin.jahns@rwth-aachen.de"} | git+https://github.com/y-js/y-array.git|
-|y-map |10.1.3 | MIT | {"name":"Kevin Jahns","email":"kevin.jahns@rwth-aachen.de"} | git+https://github.com/y-js/map.git|
-|y-memory |8.0.9 | MIT | {"name":"Kevin Jahns","email":"kevin.jahns@rwth-aachen.de"} | git+https://github.com/y-js/y-memory.git|
-|y-text |9.5.1 | MIT | {"name":"Kevin Jahns","email":"kevin.jahns@rwth-aachen.de"} | git+https://github.com/y-js/y-text.git|
 |yeast |0.1.2 | MIT | {"name":"Arnout Kazemier"} | git+https://github.com/unshiftio/yeast.git|
-|yjs |12.3.3 | MIT | {"name":"Kevin Jahns"},kevin.jahns@rwth-aachen.de | git+https://github.com/y-js/yjs.git|
+|yjs |13.0.0-66 | MIT | {"name":"Kevin Jahns"},kevin.jahns@rwth-aachen.de | git+https://github.com/y-js/yjs.git|
 
-_NOTE:_ This project contains 51 dependencies and sub*-dependencies.
+_NOTE:_ This project contains 45 dependencies and sub*-dependencies.

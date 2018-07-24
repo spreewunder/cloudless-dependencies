@@ -26,7 +26,7 @@
     "rollup-plugin-node-resolve": "^3.3.0"
   },
   "scripts": {
-    "release": "npm run licenses && gulp && sh release.sh",
+    "release": "npm run licenses && gulp",
     "licenses": "node scripts/licenses_and_attributions.js && generate-md --layout mixu-radar --input ./licenses_and_attributions/licenses_and_attributions.md --output ./licenses_and_attributions"
   },
   "repository": {
