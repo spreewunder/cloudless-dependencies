@@ -17,12 +17,12 @@
 |engine.io-client |3.2.1 | MIT | {"name":"Guillermo Rauch","email":"rauchg@gmail.com"},{"name":"Vladimir Dronnikov","email":"dronnikov@gmail.com"},{"name":"Christoph Dorn","url":"https://github.com/cadorn"},{"name":"Mark Mokryn","email":"mokesmokes@gmail.com"} | git+https://github.com/socketio/engine.io-client.git|
 |engine.io-parser |2.1.2 | MIT | _Unknown_ | git+ssh://git@github.com/socketio/engine.io-parser.git|
 |inherits |2.0.3 | ISC | _Unknown_ | git://github.com/isaacs/inherits.git|
+|ms |2.0.0 | MIT | _Unknown_ | git+https://github.com/zeit/ms.git|
 |safe-buffer |5.1.2 | MIT | {"name":"Feross Aboukhadijeh","email":"feross@feross.org","url":"http://feross.org"} | git://github.com/feross/safe-buffer.git|
 |isarray |2.0.1 | MIT | {"name":"Julian Gruber","email":"mail@juliangruber.com","url":"http://juliangruber.com"} | git://github.com/juliangruber/isarray.git|
 |has-binary2 |1.0.3 | MIT | {"name":"Kevin Roark"} | -|
 |has-cors |1.1.0 | MIT | {"name":"Nathan Rajlich","email":"nathan@tootallnate.net","url":"http://n8.io/"} | git://github.com/component/has-cors.git|
 |indexof |0.0.1 | _See code repository or node modules folder for license information_ | _Unknown_ | -|
-|ms |2.0.0 | MIT | _Unknown_ | git+https://github.com/zeit/ms.git|
 |object-component |0.0.3 | _See code repository or node modules folder for license information_ | _Unknown_ | -|
 |parseqs |0.0.5 | MIT | {"name":"Gal Koren"} | git+https://github.com/get/querystring.git|
 |parseuri |0.0.5 | MIT | _Unknown_ | git+https://github.com/get/parseuri.git|
