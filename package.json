@@ -1,11 +1,10 @@
 {
   "name": "cloudless-dependencies",
-  "version": "3.1.0",
+  "version": "4.0.0",
   "description": "Cloudless dependencies module for bundling and shipping",
-  "main": "lib/cloudless-dependencies.esm.min.js",
-  "module": "lib/cloudless-dependencies.esm.min.js",
+  "main": "lib/cloudless-dependencies.min.js",
+  "module": "lib/cloudless-dependencies.min.js",
   "dependencies": {
-    "pouchdb-binary-utils": "^7.0.0",
     "pouchdb-browser": "^7.0.0",
     "pouchdb-errors": "^7.0.0",
     "pouchdb-utils": "^7.0.0",
@@ -16,14 +15,14 @@
     "del": "^3.0.0",
     "find": "^0.2.9",
     "gulp": "^4.0.0",
-    "gulp-rename": "^1.3.0",
+    "gulp-rename": "^1.4.0",
     "gulp-uglify-es": "^1.0.4",
     "markdown-styles": "^3.1.10",
-    "rollup": "^0.62.0",
-    "rollup-plugin-commonjs": "^9.1.3",
+    "rollup": "^0.65.0",
+    "rollup-plugin-commonjs": "^9.1.6",
     "rollup-plugin-node-builtins": "^2.1.2",
-    "rollup-plugin-node-globals": "^1.2.1",
-    "rollup-plugin-node-resolve": "^3.3.0"
+    "rollup-plugin-node-globals": "^1.3.0",
+    "rollup-plugin-node-resolve": "^3.4.0"
   },
   "scripts": {
     "release": "npm run licenses && gulp",

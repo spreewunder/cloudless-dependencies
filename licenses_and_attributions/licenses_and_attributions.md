@@ -8,7 +8,6 @@
 |base64-arraybuffer |0.1.5 | [{"type":"MIT","url":"https://github.com/niklasvh/base64-arraybuffer/blob/master/LICENSE-MIT"}] | {"name":"Niklas von Hertzen","email":"niklasvh@gmail.com","url":"http://hertzen.com"} | git+https://github.com/niklasvh/base64-arraybuffer.git|
 |better-assert |1.0.2 | _See code repository or node modules folder for license information_ | {"name":"TJ Holowaychuk","email":"tj@vision-media.ca"},{"name":"TonyHe","email":"coolhzb@163.com"},{"name":"ForbesLindesay"} | git+https://github.com/visionmedia/better-assert.git|
 |blob |0.0.4 | _See code repository or node modules folder for license information_ | _Unknown_ | git+ssh://git@github.com/rase-/blob.git|
-|buffer-from |1.1.0 | MIT | _Unknown_ | git+https://github.com/LinusU/buffer-from.git|
 |callsite |1.0.0 | _See code repository or node modules folder for license information_ | {"name":"TJ Holowaychuk","email":"tj@vision-media.ca"} | -|
 |clone-buffer |1.0.0 | MIT | {"name":"Gulp Team","email":"team@gulpjs.com","url":"http://gulpjs.com/"},{"name":"Blaine Bublitz","email":"blaine.bublitz@gmail.com"} | git+https://github.com/gulpjs/clone-buffer.git|
 |component-bind |1.0.0 | _See code repository or node modules folder for license information_ | _Unknown_ | git+https://github.com/component/bind.git|
@@ -19,6 +18,7 @@
 |engine.io-parser |2.1.2 | MIT | _Unknown_ | git+ssh://git@github.com/socketio/engine.io-parser.git|
 |inherits |2.0.3 | ISC | _Unknown_ | git://github.com/isaacs/inherits.git|
 |ms |2.0.0 | MIT | _Unknown_ | git+https://github.com/zeit/ms.git|
+|safe-buffer |5.1.2 | MIT | {"name":"Feross Aboukhadijeh","email":"feross@feross.org","url":"http://feross.org"} | git://github.com/feross/safe-buffer.git|
 |isarray |2.0.1 | MIT | {"name":"Julian Gruber","email":"mail@juliangruber.com","url":"http://juliangruber.com"} | git://github.com/juliangruber/isarray.git|
 |has-binary2 |1.0.3 | MIT | {"name":"Kevin Roark"} | -|
 |has-cors |1.1.0 | MIT | {"name":"Nathan Rajlich","email":"nathan@tootallnate.net","url":"http://n8.io/"} | git://github.com/component/has-cors.git|
@@ -26,6 +26,7 @@
 |object-component |0.0.3 | _See code repository or node modules folder for license information_ | _Unknown_ | -|
 |parseqs |0.0.5 | MIT | {"name":"Gal Koren"} | git+https://github.com/get/querystring.git|
 |parseuri |0.0.5 | MIT | _Unknown_ | git+https://github.com/get/parseuri.git|
+|buffer-from |1.1.0 | MIT | _Unknown_ | git+https://github.com/LinusU/buffer-from.git|
 |pouchdb-binary-utils |7.0.0 | Apache-2.0 | {"name":"Dale Harvey","email":"dale@arandomurl.com"} | git+https://github.com/pouchdb/pouchdb.git|
 |immediate |3.0.6 | MIT | {"name":"Domenic Denicola","email":"domenic@domenicdenicola.com","url":"http://domenicdenicola.com"},{"name":"Donavon West","email":"github@donavon.com","url":"http://donavon.com"},{"name":"Yaffle"},{"name":"Calvin Metcalf","email":"calvin.metcalf@gmail.com"} | git://github.com/calvinmetcalf/immediate.git|
 |pouchdb-browser |7.0.0 | Apache-2.0 | {"name":"Dale Harvey","email":"dale@arandomurl.com"} | git+https://github.com/pouchdb/pouchdb.git|
@@ -33,7 +34,6 @@
 |pouchdb-errors |7.0.0 | Apache-2.0 | {"name":"Dale Harvey","email":"dale@arandomurl.com"} | git+https://github.com/pouchdb/pouchdb.git|
 |pouchdb-md5 |7.0.0 | Apache-2.0 | {"name":"Dale Harvey","email":"dale@arandomurl.com"} | git+https://github.com/pouchdb/pouchdb.git|
 |pouchdb-utils |7.0.0 | Apache-2.0 | {"name":"Dale Harvey","email":"dale@arandomurl.com"} | git+https://github.com/pouchdb/pouchdb.git|
-|safe-buffer |5.1.2 | MIT | {"name":"Feross Aboukhadijeh","email":"feross@feross.org","url":"http://feross.org"} | git://github.com/feross/safe-buffer.git|
 |socket.io-client |2.1.1 | MIT | {"name":"Guillermo Rauch","email":"rauchg@gmail.com"},{"name":"Arnout Kazemier","email":"info@3rd-eden.com"},{"name":"Vladimir Dronnikov","email":"dronnikov@gmail.com"},{"name":"Einar Otto Stangvik","email":"einaros@gmail.com"} | git+https://github.com/Automattic/socket.io-client.git|
 |socket.io-parser |3.2.0 | MIT | _Unknown_ | git+https://github.com/Automattic/socket.io-parser.git|
 |spark-md5 |3.0.0 | WTFPL | {"name":"André Cruz","email":"andremiguelcruz@msn.com"} | git+ssh://git@github.com/satazor/js-spark-md5.git|

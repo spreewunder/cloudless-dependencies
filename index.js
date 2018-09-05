@@ -1,41 +1,13 @@
 // PouchDB dependencies
-import PouchDB from 'pouchdb-browser';
-import * as PouchDBErrors from 'pouchdb-errors';
-import { adapterFun, clone } from 'pouchdb-utils';
-import {
-    binaryStringToBlobOrBuffer,
-    binaryStringToArrayBuffer,
-    blobOrBufferToBinaryString,
-    blobOrBufferToBase64,
-    base64StringToBlobOrBuffer,
-    readAsBinaryString
-} from 'pouchdb-binary-utils';
+import PouchDB from "pouchdb-browser/lib/index.es.js";
+import * as PouchDBErrors from "pouchdb-errors/lib/index.es.js";
+import { adapterFun } from "pouchdb-utils/lib/index.es.js";
 
 // Y-JS dependencies
-import Y from 'yjs';
+import Y from "yjs";
 
 // Additional dependencies (ES5)
-import SocketIO from 'socket.io-client';
-import EventEmitter from 'events';
+import SocketIO from "socket.io-client";
+import EventEmitter from "events";
 
-const binUtils = {
-    binaryStringToBlobOrBuffer,
-    readAsBinaryString,
-    binaryStringToArrayBuffer,
-    blobOrBufferToBinaryString,
-    blobOrBufferToBase64,
-    base64StringToBlobOrBuffer
-};
-
-export {
-    adapterFun,
-    clone,
-    binUtils,
-    PouchDB,
-    PouchDBErrors,
-
-    Y,
-
-    EventEmitter,
-    SocketIO
-}
+export { adapterFun, PouchDB, PouchDBErrors, Y, EventEmitter, SocketIO };
