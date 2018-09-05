@@ -16,4 +16,4 @@ cloudless-dependencies is provided under MIT License. However, Cloudless is only
 
 ## How to build
 
-Install the dependencies using `npm install`. Afterwards run the build task using `gulp` / `gulp default` to create a new bundle.
+Install the dependencies using `npm install`. Afterwards run the build task using `num run release` to create a new bundle.
